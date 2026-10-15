@@ -1,1 +1,651 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header {
+    height: 60px;
+    background: #ffd500;
+}
+
+.nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand img {
+    width: 55px;
+    height: auto;
+}
+
+.nav nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 11px;
+}
+
+h1,
+h2 {
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 0.9;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 0.95;
+}
+
+p {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.btn,
+.dark-btn {
+    display: inline-block;
+    padding: 9px 18px;
+    text-decoration: none;
+    font-size: 9px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    background: #ffd500;
+    color: #111;
+}
+
+.dark-btn {
+    background: #000;
+    color: white;
+} 
+
+.hero {
+    padding: 50px 0 70px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.hero-content > img {
+    width: 52%;
+    max-width: 600px;
+}
+
+.hero-text {
+    max-width: 360px;
+}
+
+.hero-text p {
+    margin: 18px 0;
+}
+
+.numbers {
+    padding: 0 0 65px;
+}
+
+.numbers-box {
+    background: #e7e7e7;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.numbers h2,
+.percentage h2,
+.newsletter h2 {
+    color: #ffd500;
+}
+
+.numbers-text {
+    max-width: 300px;
+}
+
+.numbers-text p {
+    margin: 10px 0 14px;
+}
+
+.graphs {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.graphs img {
+    width: 105px;
+}
+
+.help {
+    background: #ffd500;
+    padding: 80px 0;
+}
+
+.help-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.help-text {
+    width: 38%;
+}
+
+.help-text p {
+    margin: 15px 0;
+}
+
+.help-content > img {
+    width: 55%;
+}
+
+.percentage {
+    padding: 75px 0;
+}
+
+.percentage-box {
+    background: #e7e7e7;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    min-height: 270px;
+}
+
+.percentage-box > img:first-child {
+    width: 42%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.percentage-text {
+    padding: 30px;
+    flex: 1;
+}
+
+.percentage-text p {
+    margin: 15px 0;
+}
+
+.small-graph {
+    width: 130px !important;
+    margin-right: 25px;
+}
+
+.about {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 55px 0;
+}
+
+.about h2 {
+    color: #ffd500;
+    font-size: 18px;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 8px auto 20px;
+}
+
+.about img {
+    width: 70%;
+    max-width: 750px;
+    display: block;
+    margin: auto;
+}
+
+.team {
+    padding: 70px 0;
+}
+
+.team-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.team-content img {
+    width: 58%;
+}
+
+.team-content div {
+    max-width: 330px;
+}
+
+.team-content p {
+    margin: 15px 0;
+}
+
+.method {
+    background: #e7e7e7;
+    padding: 65px 0;
+}
+
+.method-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.method-content div {
+    width: 43%;
+}
+
+.method-content p {
+    margin: 15px 0;
+}
+
+.method-content img {
+    width: 48%;
+    max-height: 320px;
+    object-fit: contain;
+}
+
+.newsletter {
+    padding: 70px 0;
+}
+
+.newsletter-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+form {
+    background: #000;
+    color: white;
+    width: 380px;
+    padding: 25px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row > div {
+    width: 50%;
+}
+
+label {
+    display: block;
+    font-size: 8px;
+    margin: 8px 0 4px;
+}
+
+input,
+textarea {
+    width: 100%;
+    background: #000;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+form button {
+    margin-top: 12px;
+}
+
+.newsletter-text {
+    width: 350px;
+}
+
+.newsletter-text p {
+    margin: 15px 0;
+}
+
+.contact {
+    background: #ffd500;
+    text-align: center;
+    padding: 45px 0 55px;
+}
+
+.contact h2 {
+    font-size: 18px;
+}
+
+.contact p {
+    margin: 8px 0 18px;
+}
+
+.contact img {
+    width: 100%;
+    max-width: 1000px;
+    height: 260px;
+    object-fit: cover;
+}
+
+.footer {
+    background: #000;
+    color: white;
+    padding: 35px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    min-height: 130px;
+}
+
+.footer-logo {
+    width: 70px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 35px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer a {
+    color: #ffd500;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    color: #ffd500;
+}
+
+.social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.social img {
+    width: auto;
+    height: 13px;
+}
+
+@media (max-width: 1279px) {
+    .container {
+        width: 92%;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .hero-content {
+        gap: 40px;
+    }
+
+    .numbers-box {
+        padding: 25px;
+    }
+
+    .graphs img {
+        width: 90px;
+    }
+
+    .help-content,
+    .team-content,
+    .method-content {
+        gap: 30px;
+    }
+
+    .contact img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 920px) {
+    .hero-content {
+        gap: 25px;
+    }
+
+    .hero-content > img {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    .numbers-box {
+        gap: 20px;
+    }
+
+    .graphs {
+        gap: 10px;
+    }
+
+    .graphs img {
+        width: 75px;
+    }
+
+    .help-content > img {
+        width: 55%;
+    }
+
+    .percentage-box > img:first-child {
+        width: 38%;
+    }
+
+    .percentage-text {
+        padding: 20px;
+    }
+
+    .small-graph {
+        width: 95px !important;
+        margin-right: 15px;
+    }
+
+    .newsletter-content {
+        gap: 30px;
+    }
+
+    form {
+        width: 50%;
+    }
+
+    .newsletter-text {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav nav {
+        gap: 12px;
+    }
+
+    .hero-content,
+    .help-content,
+    .team-content,
+    .method-content,
+    .newsletter-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content > img,
+    .help-content > img,
+    .team-content img,
+    .method-content img {
+        width: 100%;
+    }
+
+    .hero-text,
+    .help-text,
+    .method-content div,
+    .newsletter-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .numbers-box,
+    .percentage-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .numbers-text {
+        max-width: 100%;
+    }
+
+    .graphs {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .percentage-box > img:first-child {
+        width: 100%;
+        height: auto;
+    }
+
+    .percentage-text {
+        width: 100%;
+    }
+
+    .small-graph {
+        width: 110px !important;
+        margin: 0 0 20px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .contact img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .header,
+    .nav {
+        height: auto;
+    }
+
+    .nav {
+        padding: 12px 0;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 30px 0 45px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .numbers-box {
+        padding: 22px 15px;
+    }
+
+    .graphs img {
+        width: 75px;
+    }
+
+    .help,
+    .percentage,
+    .team,
+    .method,
+    .newsletter {
+        padding: 40px 0;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row > div {
+        width: 100%;
+    }
+
+    .contact img {
+        height: 160px;
+    }
+
+    .footer-content {
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
 
